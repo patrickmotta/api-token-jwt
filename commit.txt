@@ -1,0 +1,12 @@
+feat: Para novas funcionalidades.
+fix: Para correção de bugs.
+docs: Para alterações na documentação.
+style: Para melhorias que não afetam a lógica do código (formatação, espaços em branco, etc.).
+chore: Para tarefas de manutenção, atualizações de dependências, etc.
+test: Para adição ou modificação de testes.
+
+Exemplos:
+
+Adicionar nova funcionalidade: feat: Adicionar funcionalidade XYZ
+Corrigir um bug: fix: Corrigir problema na função ABC
+Atualizar uma dependência: chore(deps): Atualizar a versão da biblioteca X para 1.2.3
