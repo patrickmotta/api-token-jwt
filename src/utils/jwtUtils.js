@@ -7,7 +7,7 @@ const secretKey = process.env.secretKey;
 
 const jwtUtils = {
    generateToken: (user) =>{
-      const token = jwt.sign(user,secretKey, {expiresIn: '1h'});
+      const token = jwt.sign(user,secretKey, {expiresIn: '10m'});
       return token;
    },
 
