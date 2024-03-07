@@ -1,4 +1,4 @@
-import jwtUtils from "../utils/jwtUtils";
+import jwtUtils from "../utils/jwtUtils.js";
 
 const verifyToken = ( req, res, next ) =>{
    const token = req.headers['authorization'];

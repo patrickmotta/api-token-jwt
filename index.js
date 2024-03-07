@@ -1,6 +1,6 @@
 import express from 'express';
-import productRoutes from './src/routers/product';
-import authenticationController from './src/controllers/authenticationController';
+import productRoutes from './src/routers/product.js';
+import authenticationController from './src/controllers/authenticationController.js';
 
 const app = express();
 const port = 6000;

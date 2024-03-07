@@ -1,4 +1,4 @@
-import jwtUtils from "../utils/jwtUtils";
+import jwtUtils from "../utils/jwtUtils.js";
 
 const authenticationController = {
    login: (req, res) => {
