@@ -7,7 +7,7 @@ const verifyToken = ( req, res, next ) =>{
       return res.status(401).json({ message: 'Token ausente' })
    }
 
-   jwtUtils.verifyToken(token).then( decoded => {
+   jwtUtils.checkToken(token).then( decoded => {
       req.user = decoded;
       next();
    }).catch(err => {
