@@ -1,4 +1,4 @@
-import { sign, verify } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import dotenv from 'dotenv'
 
 dotenv.config();
@@ -7,13 +7,13 @@ const secretKey = process.env.secretKey;
 
 const jwtUtils = {
    generateToken: (user) =>{
-      const token = sign(user,secretKey, {expiresIn: '1h'});
+      const token = jwt.sign(user,secretKey, {expiresIn: '1h'});
       return token;
    },
 
    checkToken: async (token) =>{
       try{
-         const decoded = await verify(token,secretKey);
+         const decoded = await jwt.verify(token,secretKey);
          return decoded;
       } catch(err){
          throw err;
